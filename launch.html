@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/app/css/styles.css">
+  <script type="text/javascript" src="/app/require/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="/app/js/main.js"></script>
+</head>
+
+<body>
+  <div id="mainbutton">
+    <button id="clickbutton" onclick="inc()">Click me!</button>
+    <p id="money">Balance: $0</p>
+  </div>
+  <div id="otheritems">
+    <div id="topbar">
+      <button id="buildbutton" onclick="toggleDisplay('build')" type="button">
+        Buildings
+      </button>
+      <button id="upgbutton" onclick="toggleDisplay('upg')" type="button">
+        Upgrades
+      </button>
+    </div>
+    <div id="buildings">
+      <button class="building" id="acbuild" onclick="buildingFunc(0)">
+        Auto-Clicker ($8.00)
+      </button>
+      <button class="building" id="mpbuild" onclick="buildingFunc(1)">
+        Money Printer ($120.00)
+      </button>
+    </div>
+    <div id="upgrades">
+      <button class="upgrade" id="acupg1" onclick="upgradeFunc(0, 0)">
+        Clicking Factories ($1000.00)
+      </button>
+      <button class="upgrade" id="mpupg1" onclick="upgradeFunc(1, 0)">
+        Skilled Fake Money Making ($5000.00)
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "wtnmm",
+  "version": "1.0.0",
+  "description": "Ways to Not Make Money",
+  "main": "gulpfile.coffee",
+  "scripts": {
+    "test": "alert \"Hello, World!\""
+  },
+  "author": "DerpfacePython",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1"
+  }
+}

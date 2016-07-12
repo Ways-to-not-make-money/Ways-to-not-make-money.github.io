@@ -1,0 +1,40 @@
+button {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: skyblue;
+  color: black;
+}
+
+#mainbutton {
+  position: absolute;
+  left: 0;
+  width: 30%;
+  text-align: center;
+}
+
+#clickbutton {
+  top: 50%;
+  height: 50%;
+  font-size: 40px;
+}
+
+#otheritems {
+  display: inline;
+  position: absolute;
+  right: 0;
+  width: 70%;
+}
+
+#topbar {
+  padding-bottom: 20px;
+  border: 1px solid black;
+}
+
+#buildings {
+  display: block;
+}
+
+#upgrades {
+  display: none;
+}
