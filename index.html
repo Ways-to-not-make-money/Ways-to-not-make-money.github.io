@@ -21,22 +21,37 @@
       <button id="upgbutton" onclick="toggleDisplay('upg')" type="button">
         Upgrades
       </button>
+      <button id="statsbutton" onclick="toggleDisplay('stats')">
+        Stats
+      </button>
     </div>
     <div id="buildings">
       <button class="building" id="acbuild" onclick="buildingFunc(0)">
-        Auto-Clicker ($8.00)
-      </button>
+        Auto-Clicker ($8)
+      </button> <br>
       <button class="building" id="mpbuild" onclick="buildingFunc(1)">
-        Money Printer ($120.00)
+        Money Printer ($120)
+      </button> <br>
+      <button class="building" id="ccbuild" onclick="buildingFunc(2)">
+        Counterfeit Company ($1337)
       </button>
     </div>
     <div id="upgrades">
       <button class="upgrade" id="acupg1" onclick="upgradeFunc(0, 0)">
-        Clicking Factories ($1000.00)
-      </button>
+        Clicking Factories ($1000)
+      </button> <br>
       <button class="upgrade" id="mpupg1" onclick="upgradeFunc(1, 0)">
-        Skilled Fake Money Making ($5000.00)
+        Skilled Fake Money Making ($5000)
+      </button> <br>
+      <button class="upgrade" id="ccupg1" onclick="upgradeFunc(2, 0)">
+        Printing Templates ($16900)
+      </button> <br>
+      <button class="upgrade" id="acupg2" onclick="upgradeFunc(0, 1)">
+        Iron-Clad Mice ($42000)
       </button>
+    </div>
+    <div id="stats">
+      <p id="clicks">Total Clicks: 0</p>
     </div>
   </div>
 </body>
