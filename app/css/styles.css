@@ -27,12 +27,28 @@ button {
 }
 
 #topbar {
-  padding-bottom: 20px;
   border: 1px solid black;
+  padding-bottom: 20px;
+}
+
+#items {
+  position: absolute;
+  left: 0;
+  width: 70%;
 }
 
 #buildings {
   display: block;
+}
+
+#hoverinfo {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 #upgrades {
