@@ -28,10 +28,10 @@
     </section>
     
     <br>
-    
     <div id="mainbutton">
-    <button id="clickbutton" onclick="inc()">Click me!</button>
-    <p id="money">Balance: $0</p>
+      <p id="mps">$0.0/second</p>
+      <button id="clickbutton" onclick="inc()">Click me!</button>
+      <p id="money">Balance: $0</p>
     </div>
     <div id="otheritems">
       <div id="topbar">
@@ -45,36 +45,52 @@
           Stats
         </button>
       </div>
-      <div id="buildings">
-        <button class="building" id="acbuild" onclick="buildingFunc(0)">
-          Auto-Clicker ($8)
-        </button> <br>
-        <button class="building" id="mpbuild" onclick="buildingFunc(1)">
-          Money Printer ($120)
-        </button> <br>
-        <button class="building" id="ccbuild" onclick="buildingFunc(2)">
-          Counterfeit Company ($1337)
-        </button>
+      <div id="items">
+        <div id="buildings">
+          <button id="acbuild" onclick="buildingFunc(0)" onmouseover="hoverFuncBuild(0)" onmouseout="hoverRemove()">
+            Auto-Clicker ($8)
+          </button> <br>
+          <button id="mpbuild" onclick="buildingFunc(1)" onmouseover="hoverFuncBuild(1)" onmouseout="hoverRemove()">
+            Money Printer ($120)
+          </button> <br>
+          <button id="ccbuild" onclick="buildingFunc(2)" onmouseover="hoverFuncBuild(2)" onmouseout="hoverRemove()">
+            Counterfeit Company ($1337)
+          </button> <br>
+          <button id="scbuild" onclick="buildingFunc(3)" onmouseover="hoverFuncBuild(3)" onmouseout="hoverRemove()">
+            Sharemarket Crash ($20160)
+          </button>
+        </div>
+        <div id="upgrades">
+          <button id="acupg1" onclick="upgradeFunc(0, 0)" onmouseover="hoverFuncUpg(0, 0)" onmouseout="hoverRemove()">
+            Clicking Factories ($1000)
+          </button> <br>
+          <button id="clickupg1" onclick="clickUpg(0)" onmouseover="hoverFuncUpg(-1, 0)" onmouseout="hoverRemove()">
+            Flexible Fingers ($2100)
+          </button> <br>
+          <button id="mpupg1" onclick="upgradeFunc(1, 0)" onmouseover="hoverFuncUpg(1, 0)" onmouseout="hoverRemove()">
+            Skilled Fake Money Making ($5000)
+          </button> <br>
+          <button id="ccupg1" onclick="upgradeFunc(2, 0)" onmouseover="hoverFuncUpg(2, 0)" onmouseout="hoverRemove()">
+            Printing Templates ($16900)
+          </button> <br>
+          <button id="acupg2" onclick="upgradeFunc(0, 1)" onmouseover="hoverFuncUpg(0, 1)" onmouseout="hoverRemove()">
+            Iron-Clad Mice ($42000)
+          </button> <br>
+          <button id="scupg1" onclick="upgradeFunc(3, 0)" onmouseover="hoverFuncUpg(3, 0)" onmouseout="hoverRemove()">
+            Fire on Wall Street ($150000)
+          </button> <br>
+          <button id="mpupg2" onclick="upgradeFunc(1, 1)" onmouseover="hoverFuncUpg(1, 1)" onmouseout="hoverRemove()">
+            Efficient Ink Cartridges ($150000)
+          </button>
+        </div>
+        <div id="stats">
+          <p id="clicks">Total Clicks: 0</p>
+        </div>
       </div>
-      <div id="upgrades">
-        <button class="upgrade" id="acupg1" onclick="upgradeFunc(0, 0)">
-          Clicking Factories ($1000)
-        </button> <br>
-        <button class="upgrade" id="mpupg1" onclick="upgradeFunc(1, 0)">
-          Skilled Fake Money Making ($5000)
-        </button> <br>
-        <button class="upgrade" id="ccupg1" onclick="upgradeFunc(2, 0)">
-          Printing Templates ($16900)
-        </button> <br>
-        <button class="upgrade" id="acupg2" onclick="upgradeFunc(0, 1)">
-          Iron-Clad Mice ($42000)
-        </button>
+      <div id="hover">
+        <p id="hoverinfo">Hover over something!</p>
       </div>
-      <div id="stats">
-        <p id="clicks">Total Clicks: 0</p>
-      </div>
-  </div>
-
-  
+    </div>
   </body>
+
 </html>
