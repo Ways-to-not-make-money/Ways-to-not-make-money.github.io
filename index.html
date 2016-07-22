@@ -1,89 +1,48 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Ways to NOT make money by Ways-to-not-make-money</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/app/css/styles.css">
-    <script type="text/javascript" src="/app/require/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="/app/js/main.js"></script>
-  </head>
-  <body>
-    <section class="page-header">
-      <div id="mainbutton">
-        <p id="mps">$0.0/second</p>
-        <button id="clickbutton" onclick="inc()">Click me!</button>
-        <p id="money">Balance: $0</p>
-      </div>
-      <div id="otheritems">
-        <div id="topbar">
-          <button id="buildbutton" onclick="toggleDisplay('build')" type="button">
-            Buildings
-          </button>
-          <button id="upgbutton" onclick="toggleDisplay('upg')" type="button">
-            Upgrades
-          </button>
-          <button id="statsbutton" onclick="toggleDisplay('stats')">
-            Stats
-          </button>
-        </div>
-        <div id="items">
-          <div id="buildings">
-            <button id="acbuild" onclick="buildingFunc(0)" onmouseover="hoverFuncBuild(0)" onmouseout="hoverRemove()">
-              Auto-Clicker ($8)
-            </button> <br>
-            <button id="mpbuild" onclick="buildingFunc(1)" onmouseover="hoverFuncBuild(1)" onmouseout="hoverRemove()">
-              Money Printer ($120)
-            </button> <br>
-            <button id="ccbuild" onclick="buildingFunc(2)" onmouseover="hoverFuncBuild(2)" onmouseout="hoverRemove()">
-              Counterfeit Company ($1337)
-            </button> <br>
-            <button id="scbuild" onclick="buildingFunc(3)" onmouseover="hoverFuncBuild(3)" onmouseout="hoverRemove()">
-              Sharemarket Crash ($20160)
-            </button>
-          </div>
-          <div id="upgrades">
-            <button id="acupg1" onclick="upgradeFunc(0, 0)" onmouseover="hoverFuncUpg(0, 0)" onmouseout="hoverRemove()">
-              Clicking Factories ($1000)
-            </button> <br>
-            <button id="clickupg1" onclick="clickUpg(0)" onmouseover="hoverFuncUpg(-1, 0)" onmouseout="hoverRemove()">
-              Flexible Fingers ($2100)
-            </button> <br>
-            <button id="mpupg1" onclick="upgradeFunc(1, 0)" onmouseover="hoverFuncUpg(1, 0)" onmouseout="hoverRemove()">
-              Skilled Fake Money Making ($5000)
-            </button> <br>
-            <button id="ccupg1" onclick="upgradeFunc(2, 0)" onmouseover="hoverFuncUpg(2, 0)" onmouseout="hoverRemove()">
-              Printing Templates ($16900)
-            </button> <br>
-            <button id="acupg2" onclick="upgradeFunc(0, 1)" onmouseover="hoverFuncUpg(0, 1)" onmouseout="hoverRemove()">
-              Iron-Clad Mice ($42000)
-            </button> <br>
-            <button id="scupg1" onclick="upgradeFunc(3, 0)" onmouseover="hoverFuncUpg(3, 0)" onmouseout="hoverRemove()">
-              Fire on Wall Street ($150000)
-            </button> <br>
-            <button id="mpupg2" onclick="upgradeFunc(1, 1)" onmouseover="hoverFuncUpg(1, 1)" onmouseout="hoverRemove()">
-              Efficient Ink Cartridges ($150000)
-            </button>
-          </div>
-          <div id="stats">
-            <p id="clicks">Total Clicks: 0</p>
-          </div>
-        </div>
-        <div id="hover">
-          <p id="hoverinfo">Hover over something!</p>
-        </div>
-      </div>
-    </section>
-    
-    <br>
-    <section class="main-content">
-      <p>Welcome to the Ways to NOT make money website! You can install the source code <a href="https://github.com/Ways-to-not-make-money/wtnmm-javascript/archive/master.zip">here</a>, or you may optionally play the game (above), however note your progress will NOT be saved.</p>
-    </section>
-    
-  </body>
+<html>
 
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Ways to NOT make money : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ways to NOT make money</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Ways-to-not-make-money">View on GitHub</a>
+
+          <h1 id="project_title">Ways to NOT make money</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Source Code JS/CoffeeScript : <a href="https://github.com/Ways-to-not-make-money/wtnmm-javascript/archive/master.zip">download here</a></p>
+
+<p>Source Code Python 2/3 (no longer maintained): <a href="https://github.com/Ways-to-not-make-money/wtnmm-python/archive/master.zip">download here</a></p>
+
+<p>Or you could just play the game above.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
