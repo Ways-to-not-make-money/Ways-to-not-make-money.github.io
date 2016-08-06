@@ -1,8 +1,12 @@
+body {
+  background-color: #ddddff;
+}
+
 button {
   border-radius: 5px;
   padding: 10px;
   border: none;
-  background-color: skyblue;
+  background-color: #5555cc;
   color: black;
 }
 
@@ -27,8 +31,13 @@ button {
 }
 
 #topbar {
-  border: 1px solid black;
-  padding-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#topbar button {
+  background-color: grey;
 }
 
 #items {
@@ -37,8 +46,26 @@ button {
   width: 70%;
 }
 
+#items button {
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 220px;
+}
+
 #buildings {
   display: block;
+}
+
+#buildbutton {
+  background-color: #5555cc;
+}
+
+#upgrades {
+  display: none;
+}
+
+#stats {
+  display: none;
 }
 
 #hoverinfo {
@@ -49,12 +76,4 @@ button {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-}
-
-#upgrades {
-  display: none;
-}
-
-#stats {
-  display: none;
 }
